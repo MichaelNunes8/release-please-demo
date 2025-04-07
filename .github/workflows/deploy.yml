@@ -1,0 +1,13 @@
+name: Deploy test
+
+on:
+  workflow_dispatch:
+
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy mock
+        run: |
+          echo We deploy
